@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_first/demo/form_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/basic_demo.dart';
@@ -22,12 +23,13 @@ class App extends StatelessWidget {
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70,
          ),
-      initialRoute: "/home",
+      initialRoute: "/form",
       routes: {
-        "/" : (context) => NavigatorDemo(),
-        "/home" : (context) => Home(),
-        "/about" : (context) => Page(title: "About")
-      },
+        "/navigator" : (context) => NavigatorDemo(),
+        "/" : (context) => Home(),
+        "/about" : (context) => Page(title: "About"),
+        "/form" : (context) => FormDemo()
+      }
     );
   }
 }
