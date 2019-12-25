@@ -13,9 +13,12 @@ class SliverDemo extends StatelessWidget {
             floating: true,
             expandedHeight: 178.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text("wangzixu",style: TextStyle(color: Colors.white),),
-              centerTitle:true,
-              background: Image.network(posts[0].imgUrl,fit: BoxFit.cover),
+              title: Text(
+                "wangzixu",
+                style: TextStyle(color: Colors.white),
+              ),
+              centerTitle: true,
+              background: Image.network(posts[0].imgUrl, fit: BoxFit.cover),
               collapseMode: CollapseMode.parallax,
             ),
           ),
@@ -30,10 +33,6 @@ class SliverDemo extends StatelessWidget {
     );
   }
 }
-
-
-
-
 
 class SliverGridDemo extends StatelessWidget {
   @override

@@ -4,6 +4,7 @@ class FormDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("FormDemo"),),
       body: Theme(
           data: Theme.of(context).copyWith(primaryColor: Colors.black),
           child: Column(
@@ -33,18 +34,20 @@ class _TextFromDemoState extends State<TextFromDemo> {
   var textEditController = TextEditingController();
 
   @override
-  void dispose() {
-    super.dispose();
-    textEditController.dispose();
-  }
-
-  @override
   void initState() {
     super.initState();
     textEditController.addListener(() {
       debugPrint(textEditController.text);
     });
   }
+
+  @override
+  void dispose() {
+    super.dispose();
+    textEditController.dispose();
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +88,6 @@ class _RegisterFormStateState extends State<RegisterFormState> {
       registerGlobalKey.currentState.save();
       debugPrint("$userName");
       debugPrint("$passWord");
-
       Scaffold.of(context).showSnackBar(SnackBar(
         content: Text("Registering...."),
       ));

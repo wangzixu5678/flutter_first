@@ -1,5 +1,5 @@
 class Post {
-  const Post({
+  Post({
     this.title,
     this.author,
     this.imgUrl,
@@ -10,45 +10,99 @@ class Post {
   final String author;
   final String imgUrl;
   final String describe;
+
+  bool isSelected = false;
 }
 
-final List<Post> posts = [
-
+ final List<Post> posts = [
   Post(
-      title: "标题1",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/9353e64959284403b59717b11c09089b.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Candy Shop',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/candy-shop.jpg',
   ),
   Post(
-      title: "标题2",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/cf2af7a9af514fedb2288f3e7fb21175.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Childhood in a picture',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/childhood-in-a-picture.jpg',
   ),
   Post(
-      title: "标题3",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/ee4eac6c3723433ebc48c0c4dd29380f.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Contained',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/contained.jpg',
   ),
   Post(
-      title: "标题4",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/0dcd98ac2efc4dfa80a4bf1238fd611b.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Dragon',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/dragon.jpg',
   ),
   Post(
-      title: "标题5",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/6d863a4474364a1aa12d7c248bb5a3af.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Free Hugs',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/free_hugs.jpg',
   ),
   Post(
-      title: "标题6",
-      author: "王子旭",
-      imgUrl: "http://xinliutong.oss-cn-beijing.aliyuncs.com/lisanbu/41c116acc761450fb7ca8adf6ec77ca9.jpg",
-      describe : "abceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduoabceddskdksdksdisidisdiisdisidaosduaoiusdiuaiusdiouaoiusidooiuasiduo"
+    title: 'Gravity Falls',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/gravity-falls.png',
+  ),
+  Post(
+    title: 'Icecream Truck',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/icecreamtruck.png',
+  ),
+  Post(
+    title: 'keyclack',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/keyclack.jpg',
+  ),
+  Post(
+    title: 'Overkill',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/overkill.png',
+  ),
+  Post(
+    title: 'Say Hello to Barry',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/say-hello-to-barry.jpg',
+  ),
+  Post(
+    title: 'Space Skull',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/space-skull.jpg',
+  ),
+  Post(
+    title: 'The Old Fashioned',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/the-old-fashioned.png',
+  ),
+  Post(
+    title: 'Tornado',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/tornado.jpg',
+  ),
+  Post(
+    title: 'Undo',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/undo.jpg',
+  ),
+  Post(
+    title: 'White Dragon',
+    author: 'Mohamed Chahin',
+    describe: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
+    imgUrl: 'https://resources.ninghao.org/images/white-dragon.jpg',
   )
 ];
-

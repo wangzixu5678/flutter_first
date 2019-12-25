@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first/demo/form_demo.dart';
+import 'package:flutter_first/demo/state_manager_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/basic_demo.dart';
@@ -7,6 +8,7 @@ import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigator_demo.dart';
+import 'demo/material_components.dart';
 void main() {
   runApp(App());
 }
@@ -23,12 +25,14 @@ class App extends StatelessWidget {
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70,
          ),
-      initialRoute: "/form",
+      initialRoute: "/state-management",
       routes: {
-        "/navigator" : (context) => NavigatorDemo(),
         "/" : (context) => Home(),
+        "/navigator" : (context) => NavigatorDemo(),
         "/about" : (context) => Page(title: "About"),
-        "/form" : (context) => FormDemo()
+        "/form" : (context) => FormDemo(),
+        "/mcd" : (context) => MaterialComponents(),
+        "/state-management" : (context) => StateManagerDemo(),
       }
     );
   }
@@ -110,7 +114,7 @@ class Home extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar:BottomNavigationBarDemo() ,
+        bottomNavigationBar:BottomNavigationBarDemo(),
       ),
     );
   }

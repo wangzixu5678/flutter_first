@@ -10,7 +10,7 @@ class NavigatorDemo extends StatelessWidget {
           children: <Widget>[
             FlatButton(onPressed: null, child: Text("home")),
             FlatButton(child: Text("about"), onPressed: () {
-               Navigator.pushNamed(context, "about");
+               Navigator.pushNamed(context,"about");
             }),
           ]),
       ),
