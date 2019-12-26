@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first/demo/form_demo.dart';
-import 'package:flutter_first/demo/state_manager_demo.dart';
+import 'package:flutter_first/demo/rxdart/rxdart_demo.dart';
+import 'package:flutter_first/demo/state/state_manager_demo.dart';
+import 'package:flutter_first/demo/stream/stream_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/basic_demo.dart';
@@ -25,7 +27,7 @@ class App extends StatelessWidget {
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70,
          ),
-      initialRoute: "/state-management",
+      initialRoute: "/rxdart",
       routes: {
         "/" : (context) => Home(),
         "/navigator" : (context) => NavigatorDemo(),
@@ -33,6 +35,8 @@ class App extends StatelessWidget {
         "/form" : (context) => FormDemo(),
         "/mcd" : (context) => MaterialComponents(),
         "/state-management" : (context) => StateManagerDemo(),
+        "/stream" : (context) => StreamDemo(),
+        "/rxdart" : (context) => RxDartDemo(),
       }
     );
   }
@@ -115,6 +119,7 @@ class Home extends StatelessWidget {
           ),
         ),
         bottomNavigationBar:BottomNavigationBarDemo(),
+
       ),
     );
   }
